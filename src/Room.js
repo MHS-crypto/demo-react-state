@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Room.css';
 
 
 function Room() {
@@ -13,7 +14,7 @@ function Room() {
   const setAge = ()=> {
     setage(++age);
   }
-  return ( <div>This is room component : lit = {islit? "lit":"dark"} 
+  return ( <div className={"Room " + (islit? "lit" :"dark")}>This is room component : lit = {islit? "lit":"dark"} 
   <br/>
   Age: {age};
   <br/>
